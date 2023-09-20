@@ -25,7 +25,8 @@ app.use(
 );
 ```
 
-Then when you receive the event via a post, you will need to retrieve the ```x-qr-signature``` header and verify the event with the qranswers.webhook.constructEvent method.
+Then when you receive the event via a post, you will need to retrieve the ```x-qr-signature``` header and verify the event with the ```qranswers.webhook.constructEvent()``` method.
+The method will throw an error if the signature does not match or if the period between the request and the decoding is too long.
 You should return a json response to the QR-Answers server like below.
 
 ```
@@ -38,7 +39,6 @@ app.post('/qrhook', function(req, res) {
     console.log('Error', err);
     res.json({error: `Webhook Error: ${err.message}`});
     return;
-    //return res.status(400).send(`Webhook Error: ${err.message}`)
   }
 
   switch (event.type) {
