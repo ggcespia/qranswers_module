@@ -1,6 +1,6 @@
 {
   "name": "qranswers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Helper module to access QR-Answers API",
   "main": "lib/qranswers.js",
   "scripts": {
