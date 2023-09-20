@@ -52,4 +52,8 @@ app.post('/qrhook', function(req, res) {
 });
 ```
 
+The QR-Answers server(s) will only try 3 times with backoff to deliver your event.  The server determines whether to retry sending the event by examining the 
+{success: "xxx"} field in the returned JSON.
+
+
 ## API
