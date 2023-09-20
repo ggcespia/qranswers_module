@@ -11,10 +11,11 @@ For the webhook, you need to select which events you would like to receive from 
 the dropdown and you will see them appear in a list below.  You may remove any events you no longer want to receive by 
 clicking the trash can next to the event and choosing Update Webhook.
 
-Your webhook will need to collect the raw Body of the request received.  If you use express, you may add this to your file:
-const bodyParser = require('body-parser')
+Your webhook will need to collect the raw Body (a Buffer) of the request received.  If you use express, you may add this to your file:
 
 ```
+const bodyParser = require('body-parser')
+
 app.use(
   bodyParser.json({
     verify: function(req, res, buf) {
@@ -24,7 +25,7 @@ app.use(
 );
 ```
 
-Then when you receive the event, you will need to retrieve the x-qr-signature header and verify the event with the qranswers.webhook.constructEvent method.
+Then when you receive the event via a post, you will need to retrieve the ```x-qr-signature``` header and verify the event with the qranswers.webhook.constructEvent method.
 You should return a json response to the QR-Answers server like below.
 
 ```
