@@ -1,0 +1,25 @@
+{
+  "name": "qranswers",
+  "version": "1.0.0",
+  "description": "Helper module to access QR-Answers API",
+  "main": "lib/qranswers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ggcespia/qranswers_module.git"
+  },
+  "keywords": [
+    "qranswers",
+    "qrcontest",
+    "qrcode",
+    "api"
+  ],
+  "author": "Greg Carpenter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ggcespia/qranswers_module/issues"
+  },
+  "homepage": "https://github.com/ggcespia/qranswers_module#readme"
+}
