@@ -1,6 +1,6 @@
 {
   "name": "qranswers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helper module to access QR-Answers API",
   "main": "lib/qranswers.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ggcespia/qranswers_module#readme",
   "dependencies": {
+    "aws-amplify": "^5.3.11",
     "crypto": "^1.0.1"
   }
 }
