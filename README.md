@@ -11,7 +11,19 @@ For the webhook, you need to select which events you would like to receive from 
 the dropdown and you will see them appear in a list below.  You may remove any events you no longer want to receive by 
 clicking the trash can next to the event and choosing Update Webhook.
 
+To use this module:
+
+```
+npm install qranswers
+```
+
 Your webhook will need to collect the raw Body (a Buffer) of the request received.  If you use express, you may add this to your file:
+
+```
+npm install body-parser
+```
+
+Then, in your nodejs app:
 
 ```
 const bodyParser = require('body-parser')
