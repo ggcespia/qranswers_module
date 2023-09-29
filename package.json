@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ggcespia/qranswers_module#readme",
   "dependencies": {
     "aws-amplify": "^5.3.11",
+    "axios": "^1.5.1",
     "crypto": "^1.0.1"
   }
 }
