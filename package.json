@@ -1,6 +1,6 @@
 {
   "name": "qranswers",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Helper module to access QR-Answers API",
   "main": "lib/qranswers.js",
   "scripts": {
@@ -24,6 +24,6 @@
   "homepage": "https://github.com/ggcespia/qranswers_module#readme",
   "dependencies": {
     "aws-amplify": "^5.3.11",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.6.1"
   }
 }
